@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="/static/all.css">
+</head>
+<body>
+    <h1>Criador de Slides</h1>
+    <form id="slide-form" method="POST" action="/processar">
+        <label for="num-slides">Número de Slides:</label>
+        <input type="number" id="num-slides" name="num-slides" min="1" required>
+        <label for="titulo">Título:</label>
+        <input type="text" id="titulo" name="titulo" required>
+        <label for="subtitulo">Subtítulo:</label>
+        <input type="text" id="subtitulo" name="subtitulo" required>
+        <button type="button" id="create-slides">Criar Slides</button>
+        <div id="slide-container"></div>
+        <input type="hidden" name="slide-content" id="slide-content">
+        <button type="submit">Enviar</button>
+    </form>
+</body>
+<script src="/static/main.js"></script>
+</html>
